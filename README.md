@@ -1,6 +1,6 @@
 # Chat-RMI-Java
 
-Os seguintes arquivos são direcionados para um chat de bate-papo com a tecnologia de rmi java.
+Os seguintes arquivos são direcionados para um chat de bate-papo com a tecnologia de RMI java.
 
 Para execução do programa. faça os seguintes passos:
 
