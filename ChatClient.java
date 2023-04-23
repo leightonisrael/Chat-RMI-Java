@@ -4,6 +4,8 @@ import java.rmi.server.UnicastRemoteObject;
 
 public class ChatClient {
     public static void main(String[] args) throws Exception {
+        
+        /*Para conversar com outra pessoa, apenes altere o "localhost" para o seu ip e assim você consegue entrar por outras máquina */   
         ChatServerInterface chatServer = (ChatServerInterface)Naming.lookup("rmi://localhost/ChatServer");
         ChatClientInterface chatClient = new ChatClientImpl(chatServer);
         chatServer.registerChatClient(chatClient);
