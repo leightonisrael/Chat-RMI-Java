@@ -27,6 +27,7 @@ public class ChatServerImpl extends UnicastRemoteObject implements ChatServerInt
 
     public static void main(String[] args) throws Exception {
         ChatServerInterface chatServer = new ChatServerImpl();
+         /*Para conversar com outra pessoa, apenes altere o "localhost" para o seu ip e assim você consegue entrar por outras máquina */
         Naming.rebind("rmi://localhost/ChatServer", chatServer);
         System.out.println("Server no ar...");
     }
